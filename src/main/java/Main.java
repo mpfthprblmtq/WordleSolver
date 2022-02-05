@@ -61,8 +61,8 @@ class Main {
         // get letters that matched
         System.out.println();
         String matchedLetters = inputHelper.getInput(
-                "Any letters in their correct location?\n(Format like C_EE_, leave blank for no matches)",
-                "^$|[a-z_]{5}",
+                "Any letters in their correct location? (Green)\n(Format like C_EE_, leave blank for no matches)",
+                "^$|[A-Za-z_]{5}",
                 "Invalid input, must match \"C_EE_\" format!");
 
         // reduce the number of words
@@ -81,8 +81,8 @@ class Main {
         // get letters that were found
         System.out.println();
         String foundLetters = inputHelper.getInput(
-                "Any letters found, but not in their correct location?\n(Format like C_EE_, leave blank for no matches)",
-                "^$|[a-z_]{5}",
+                "Any letters found, but not in their correct location? (Yellow)\n(Format like C_EE_, leave blank for no matches)",
+                "^$|[A-Za-z_]{5}",
                 "Invalid input, must match \"C_EE_\" format!");
 
         // reduce the number of words again
@@ -101,8 +101,8 @@ class Main {
         // eliminate any extra letters we don't need
         System.out.println();
         String notFoundLetters = inputHelper.getInput(
-                "Any letters not found?\n(Type all the letters, no spaces, so like \"abc\" and leave blank if none)",
-                "[a-z]{1,5}",
+                "Any letters not found? (Grey)\n(Type all the letters, no spaces, so like \"abc\" and leave blank if none)",
+                "[A-Za-z]{1,5}",
                 "Invalid input, must match abc format!");
 
         // reduce the number of words yet again
